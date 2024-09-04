@@ -28,13 +28,11 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
+            padding: 10px;
+            background-color: transparent;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -43,19 +41,22 @@
         <h1>Welcome to my site!</h1>
     </div>
 
-    <button class="toggle-button" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+    <button class="toggle-button" id="themeToggle" onclick="toggleMode()">🌙</button>
 
     <script>
         function toggleMode() {
             const body = document.body;
+            const button = document.getElementById('themeToggle');
             const currentMode = body.style.backgroundColor;
 
             if (currentMode === 'white' || currentMode === '') {
                 body.style.backgroundColor = 'black';
                 body.style.color = 'white';
+                button.innerHTML = '☀️';
             } else {
                 body.style.backgroundColor = 'white';
                 body.style.color = 'black';
+                button.innerHTML = '🌙';
             }
         }
     </script>
