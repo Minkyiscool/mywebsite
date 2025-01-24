@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Browsers for old systems</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,6 +24,33 @@
             margin-top: 50px;
         }
 
+        .footer-text {
+            font-size: 1.4em;
+            color: grey;
+            margin-top: 10px;
+        }
+
+        .browser-button {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #f1f1f1; /* Grey background */
+            padding: 10px;
+            border-radius: 8px; /* Rounded corners */
+            text-align: center;
+            border: 2px solid #ccc;
+        }
+
+        .browser-button img {
+            width: 120px; /* Adjust the image size */
+            height: auto;
+        }
+
+        .browser-button p {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
         .toggle-button {
             position: fixed;
             bottom: 20px;
@@ -38,7 +65,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to my site!</h1>
+        <h1>Download modern browsers for your old system</h1>
+        <p class="footer-text">For Windows 98/ME or later.</p>
+
+        <!-- Image Button with Grey Background -->
+        <a href="https://www.mozilla.org/firefox/new/" class="browser-button" target="_blank">
+            <img src="https://www.youtube.com/img/desktop/supported_browsers/firefox.png" alt="Mozilla Firefox">
+            <p>Mozilla Firefox</p>
+        </a>
     </div>
 
     <button class="toggle-button" id="themeToggle" onclick="toggleMode()">🌙</button>
